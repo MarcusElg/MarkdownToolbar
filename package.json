@@ -1,0 +1,176 @@
+{
+	"name": "markdowntoolbar",
+	"displayName": "MarkdownToolbar",
+	"description": "Adds toolbar items for markdown functions",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Other",
+		"Snippets"
+	],
+	"icon": "icons/icon.svg",
+	"activationEvents": [
+		"onCommand:markdowntoolbar.toggleBold",
+		"onCommand:markdowntoolbar.toggleItalic",
+		"onCommand:markdowntoolbar.toggleStrikethrough",
+		"onCommand:markdowntoolbar.toggleCodeBlock",
+		"onCommand:markdowntoolbar.toggleBlockQuote",
+		"onCommand:markdowntoolbar.insertImage",
+		"onCommand:markdowntoolbar.insertLink",
+		"onCommand:markdowntoolbar.headerIncreaseLevel",
+		"onCommand:markdowntoolbar.headerDecreaseLevel"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "markdowntoolbar.toggleBold",
+				"title": "Toggle Bold",
+				"icon": {
+					"light": "icons/boldIconLight.svg",
+					"dark": "icons/boldIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.toggleItalic",
+				"title": "Toggle Italic",
+				"icon": {
+					"light": "icons/italicIconLight.svg",
+					"dark": "icons/italicIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.toggleStrikethrough",
+				"title": "Toggle Strikethrough",
+				"icon": {
+					"light": "icons/strikethroughIconLight.svg",
+					"dark": "icons/strikethroughIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.toggleCodeBlock",
+				"title": "Toggle Code Block",
+				"icon": {
+					"light": "icons/codeBlockIconLight.svg",
+					"dark": "icons/codeBlockIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.toggleBlockQuote",
+				"title": "Toggle Block Quote",
+				"icon": {
+					"light": "icons/blockQuoteIconLight.svg",
+					"dark": "icons/blockQuoteIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.insertImage",
+				"title": "Insert Image",
+				"icon": {
+					"light": "icons/imageIconLight.svg",
+					"dark": "icons/imageIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.insertLink",
+				"title": "Insert Link",
+				"icon": {
+					"light": "icons/linkIconLight.svg",
+					"dark": "icons/linkIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.headerIncreaseLevel",
+				"title": "Increase Header Level",
+				"icon": {
+					"light": "icons/headerSizeIncreaseLightIcon.svg",
+					"dark": "icons/headerSizeIncreaseIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			},
+			{
+				"command": "markdowntoolbar.headerDecreaseLevel",
+				"title": "Decrease Header Level",
+				"icon": {
+					"light": "icons/headerSizeDecreaseLightIcon.svg",
+					"dark": "icons/headerSizeDecreaseIcon.svg"
+				},
+				"enablement": "editorLangId == markdown"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.toggleBold",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.toggleItalic",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.toggleStrikethrough",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.toggleCodeBlock",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.insertImage",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.insertLink",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.headerIncreaseLevel",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown",
+					"command": "markdowntoolbar.headerDecreaseLevel",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.65.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.12.1",
+		"@typescript-eslint/parser": "^5.12.1",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.2"
+	}
+}

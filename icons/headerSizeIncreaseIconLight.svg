@@ -1,0 +1,25 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+>
+  <path
+     fill-rule="evenodd"
+     d="M 3.75,2 C 4.1642136,2 4.5,2.3357864 4.5,2.75 V 7 h 7 V 2.75 c 0,-0.9999996 1.5,-0.9999996 1.5,0 v 5.7805361 c 0,1.0000003 -1.5,1.0000003 -1.5,0 V 8.5 h -7 v 4.75 c 0,1 -1.5,1 -1.5,0 V 2.75 C 3,2.3357864 3.3357864,2 3.75,2 Z"/>
+  <rect
+     style="fill:black;fill-rule:evenodd;stroke:none;stroke-width:42.5764;stroke-linejoin:round;stroke-dashoffset:165.381;paint-order:markers fill stroke"
+     width="1.5435314"
+     height="5.223475"
+     x="12.271314"
+     y="-14.859233"
+     ry="0.62313497"
+     transform="rotate(90)" />
+  <rect
+     style="fill:black;fill-rule:evenodd;stroke:none;stroke-width:42.5764;stroke-linejoin:round;stroke-dashoffset:165.381;paint-order:markers fill stroke"
+     width="1.5435314"
+     height="4.8777552"
+     x="11.49668"
+     y="10.590438"
+     ry="0.62313497" />
+</svg>

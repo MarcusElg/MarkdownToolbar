@@ -1,0 +1,11 @@
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+<path style="fill:white" d="m3.75 2c0.41421 0 0.75 0.33579 0.75 0.75v4.25h7v-4.25c0-1 1.5-1 1.5 0v5.7805c0 1-1.5 1-1.5 0v-0.030536h-7v4.75c0 1-1.5 1-1.5 0v-10.5c0-0.41421 0.33579-0.75 0.75-0.75z" fill-rule="evenodd"/>
+<rect
+     style="fill:white;fill-rule:evenodd;stroke:none;stroke-width:42.5764;stroke-linejoin:round;stroke-dashoffset:165.381;paint-order:markers fill stroke"
+     width="1.5435314"
+     height="5.223475"
+     x="12.271314"
+     y="-14.859233"
+     ry="0.62313497"
+     transform="rotate(90)" />
+</svg>
