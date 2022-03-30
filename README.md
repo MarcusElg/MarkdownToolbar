@@ -1,6 +1,6 @@
 # Markdown Toolbar
 
-Adds a toolbar for common markdown functionality to avoid having to remember specific characters or shortcuts.
+An extension for Visual Studio Code that adds a toolbar for common markdown functionality to avoid having to remember specific characters or shortcuts.
 
 ## Features
 
