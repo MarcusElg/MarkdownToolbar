@@ -168,7 +168,6 @@ function changeHeaderSize(decrease: Boolean) {
 				}
 			} else {
 				// h6 is the smallest header
-				console.log(lineString.trim())
 				if (!lineString.trim().startsWith("######")) {
 					// Add char
 					editBuilder.insert(lineRange.start, "#")
