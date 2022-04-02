@@ -15,6 +15,7 @@ This extension adds buttons to the notebook toolbar. It adds the following butto
 - Toggle Bold
 - Toggle Code
 - Toggle Italic
+- Toggle Strikethrough
 
 ## Release Notes
 
