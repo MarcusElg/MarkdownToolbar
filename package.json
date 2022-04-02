@@ -10,7 +10,9 @@
 		"Other",
 		"Snippets"
 	],
-	"icon": "icons/icon.svg",
+	"icon": "icons/icon.png",
+	"repository": "https://github.com/MarcusElg/MarkdownToolbar",
+	"publisher": "MarcusElg",
 	"activationEvents": [
 		"onCommand:markdowntoolbar.toggleBold",
 		"onCommand:markdowntoolbar.toggleItalic",
