@@ -7,8 +7,7 @@
 		"vscode": "^1.65.0"
 	},
 	"categories": [
-		"Other",
-		"Snippets"
+		"Other"
 	],
 	"icon": "icons/icon.png",
 	"repository": "https://github.com/MarcusElg/MarkdownToolbar",
