@@ -108,45 +108,111 @@
 				"enablement": "editorLangId == markdown"
 			}
 		],
+		"configuration": [
+			{
+				"title": "Markdown Toolbar",
+				"properties": {
+					"MarkdownToolbar.toggleBold": {
+						"title": "Toggle Bold Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add toggle bold button the the editor bar"
+					},
+					"MarkdownToolbar.toggleItalic": {
+						"title": "Toggle Italic Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add toggle italic button the the editor bar"
+					},
+					"MarkdownToolbar.toggleStrikethrough": {
+						"title": "Toggle Strikethrough Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add toggle strikethrough button the the editor bar"
+					},
+					"MarkdownToolbar.toggleCodeBlock": {
+						"title": "Toggle Code Block Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add toggle code block button the the editor bar"
+					},
+					"MarkdownToolbar.toggleBlockQuote": {
+						"title": "Toggle Block Quote Button",
+						"type": "boolean",
+						"default": false,
+						"description": "Add toggle block quote button the the editor bar"
+					},
+					"MarkdownToolbar.insertImage": {
+						"title": "Insert Image Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add insert image button the the editor bar"
+					},
+					"MarkdownToolbar.insertLink": {
+						"title": "Insert Link Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add insert link button the the editor bar"
+					},
+					"MarkdownToolbar.headerIncreaseLevel": {
+						"title": "Increase Header Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add increase header button the the editor bar"
+					},
+					"MarkdownToolbar.headerDecreaseLevel": {
+						"title": "Decrease Header Button",
+						"type": "boolean",
+						"default": true,
+						"description": "Add decrease header button the the editor bar"
+					}
+				}
+			}
+		],
 		"menus": {
 			"editor/title": [
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.toggleBold",
 					"command": "markdowntoolbar.toggleBold",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.toggleItalic",
 					"command": "markdowntoolbar.toggleItalic",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.toggleStrikethrough",
 					"command": "markdowntoolbar.toggleStrikethrough",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.toggleCodeBlock",
 					"command": "markdowntoolbar.toggleCodeBlock",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.toggleBlockQuote",
+					"command": "markdowntoolbar.toggleBlockQuote",
+					"group": "navigation"
+				},
+				{
+					"when": "editorLangId == markdown && config.MarkdownToolbar.insertImage",
 					"command": "markdowntoolbar.insertImage",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.insertLink",
 					"command": "markdowntoolbar.insertLink",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.headerIncreaseLevel",
 					"command": "markdowntoolbar.headerIncreaseLevel",
 					"group": "navigation"
 				},
 				{
-					"when": "editorLangId == markdown",
+					"when": "editorLangId == markdown && config.MarkdownToolbar.headerDecreaseLevel",
 					"command": "markdowntoolbar.headerDecreaseLevel",
 					"group": "navigation"
 				}

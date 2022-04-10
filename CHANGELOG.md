@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.0
+
+- Added settings to configure which buttons to show as the editor titlebar is limited to 9 buttons in total
+
 ## 1.1.1
 
 - Remove snippets category as it no longer adds snippets
