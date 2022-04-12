@@ -93,7 +93,7 @@
 				"command": "markdowntoolbar.headerIncreaseLevel",
 				"title": "Increase Header Level",
 				"icon": {
-					"light": "icons/headerSizeIncreaseLightIcon.svg",
+					"light": "icons/headerSizeIncreaseIconLight.svg",
 					"dark": "icons/headerSizeIncreaseIcon.svg"
 				},
 				"enablement": "editorLangId == markdown"
@@ -102,7 +102,7 @@
 				"command": "markdowntoolbar.headerDecreaseLevel",
 				"title": "Decrease Header Level",
 				"icon": {
-					"light": "icons/headerSizeDecreaseLightIcon.svg",
+					"light": "icons/headerSizeDecreaseIconLight.svg",
 					"dark": "icons/headerSizeDecreaseIcon.svg"
 				},
 				"enablement": "editorLangId == markdown"
