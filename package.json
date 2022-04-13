@@ -2,7 +2,7 @@
 	"name": "markdowntoolbar",
 	"displayName": "Markdown Toolbar",
 	"description": "Adds toolbar items for markdown functions",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
